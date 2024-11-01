@@ -1,9 +1,9 @@
 node_id	parent_id	mutations
 ROOT	None	
 0	ROOT	mut0,mut1
-1	ROOT	mut2,mut3
+1	ROOT	mut2,mut12
 2	ROOT	mut4
 3	1	mut5,mut6,mut7
 4	1	mut8,mut9,mut10,mut11
-5	3	mut12
-6	2	mut13,mut14,mut15
+5	3	mut3
+6	0	mut13,mut14,mut15
