@@ -898,8 +898,6 @@ def shell(root_F, root_G, L_F, L_G):
 
     diff_list = compute_differences(root_F, root_G)
     pre_edits = remove_differences(root_F, root_G, diff_list)
-    print(root_F)
-    print(root_G)
     while i < len(k_values):
         global k
         k = k_values[i]
@@ -911,7 +909,6 @@ def shell(root_F, root_G, L_F, L_G):
             print("OMLTED: ", d)
             shared_labels = compute_labels(root_F)
             print("Normalized OMLTED: ", (d/(2*len(shared_labels))))
-            print(S)
             break
         i = i + 1
 
@@ -931,7 +928,7 @@ def shell(root_F, root_G, L_F, L_G):
                 del_i += 1
 
 
-    print(f"Set of ({len(l_deleted)}) labels deleted: ", ", ".join(l_deleted))
+    #print(f"Set of ({len(l_deleted)}) labels deleted: ", ", ".join(l_deleted))
     return d
     
 if __name__ == '__main__':
@@ -1052,7 +1049,6 @@ if __name__ == '__main__':
         Lines = curr_f.readlines()
         for line in Lines:
             node_info = line.split()
-            print(node_info)
             if node_info[0] != 'node_id':
                 new_node = Node(node_info[0])
                 if node_info[0] != 'ROOT':
