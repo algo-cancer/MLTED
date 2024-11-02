@@ -905,6 +905,8 @@ def shell(root_F, root_G, L_F, L_G):
         d, S = MLTDv2(root_F, root_G, 0, L_F, L_G, [])
         print("Finished k = ", k)
         if d <= k:
+            print("Minimum cost edit sequence: ")
+            print(S)
             print("Non-common labels deleted in pre-processing: ", pre_edits)
             print("OMLTED: ", d)
             shared_labels = compute_labels(root_F)
